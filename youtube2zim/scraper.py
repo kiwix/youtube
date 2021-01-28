@@ -383,7 +383,7 @@ class Youtube2Zim:
         # copy assets
         shutil.copytree(self.assets_src_dir, self.assets_dir)
 
-        fix_source_dir(self.assets_dir, "assets")
+        fix_source_dir(self.assets_dir)
 
         # cache folder to store youtube-api results
         self.cache_dir.mkdir(exist_ok=True)

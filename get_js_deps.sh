@@ -62,10 +62,3 @@ mv polyfills.js $ASSETS_PATH/polyfills.js
 curl -L -O https://unpkg.com/webp-hero@0.0.0-dev.26/dist-cjs/webp-hero.bundle.js
 rm -f $ASSETS_PATH/webp-hero.bundle.js
 mv webp-hero.bundle.js $ASSETS_PATH/webp-hero.bundle.js
-
-if command -v fix_ogvjs_dist > /dev/null; then
-    echo "fixing JS files"
-    fix_ogvjs_dist $ASSETS_PATH "assets"
-else
-    echo "NOT fixing JS files (zimscraperlib not installed)"
-fi
